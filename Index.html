@@ -2,16 +2,35 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8">
+	<title>What level of your language</title>
 	<script src="js/js.js" charset="utf-8">
-  
-  
-
-  </script>
+  	var jogadores=new Array(), texto
+        function add(){
+            texto=document.getElementById("texto");
+            window.location.href="SAtela2.html";
+        }
+  	</script>
 	<link rel="stylesheet" type="text/css" href="css/css.css" />
-    <title>What level of your language</title>
   </head>
+  	<style>
+	body{
+      	/* background: url("64459989_2490055984572000_4346588898772647936_o.jpg"); */
+      	background-color: rgb(181, 20, 255);
+    	}
+	.cor{
+	display: flex;
+      	justify-content: center;
+     	align-items: center;
+      	min-height: 100vh;
+      	flex-direction: column;
+	}
+	</style>
   <body>
-   
-   
+   	<div class="cor">
+          <img src="https://image.flaticon.com/icons/png/512/58/58474.png" height="300px">
+          
+          <input type="text" id="texto"></input>
+          <button  onclick="add()" >ADICIONAR APELIDOS</button>
+        </div>
   </body>
 </html>
